@@ -5,6 +5,11 @@ cd $(ls -d */|head -n 1)
 cp public/index.php public/php81RC6.php
 sed -i "s/(new Dotenv())->bootEnv(dirname(__DIR__).'\/.env');/(new Dotenv())->bootEnv(dirname(__DIR__).'\/.env');(new Dotenv())->overload(dirname(__DIR__).'\/.env');/g" public/php81RC6.php
 
+if [[ "$(cat public/php81RC6.php | grep Dotenv | head -1)" = "" ]]
+then
+  sed -i "s#require_once dirname(__DIR__).'\/vendor/autoload_runtime.php';#require_once dirname(__DIR__).'\/vendor\/autoload_runtime.php';(new \\\\Symfony\\\\Component\\\\Dotenv\\\\Dotenv())->overload(dirname(__DIR__).'\/.env');#g"  public/php81RC6.php
+fi
+
 MAILER_DSN=$(symfony var:export MAILER_DSN)
 MAILER_DSN=$(echo $MAILER_DSN | sed -e 's/127.0.0.1/host.docker.internal/g')
 DATABASE_URL=$(symfony var:export DATABASE_URL)
