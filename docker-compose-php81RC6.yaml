@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+    server:
+        build:
+            context: 'php81RC6/'
+        ports:
+            - 8000:8000
+        volumes:
+            - ${PWD}:/srv/app/PROJECT_FOLDER_NAME
+            # If you are on MacOS, cached is necessary to avoid bad performances
+            - ${PWD}/vendor:/srv/app/PROJECT_FOLDER_NAME/vendor:cached
+            - ${PWD}/var:/srv/app/PROJECT_FOLDER_NAME/var:cached
+            - /var/run/docker.sock:/var/run/docker.sock
