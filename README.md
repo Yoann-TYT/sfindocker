@@ -5,7 +5,7 @@ Easily to test your symfony applications on futurs versions of PHP
 
  * Symfony Framework Bundle >= 5.1
  * Docker
- * Use Symfony binar
+ * Use Symfony binary
  * Use database and mailcatcher from docker-compose.yaml
 
 ## Quick installation
