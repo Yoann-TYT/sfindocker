@@ -3,7 +3,7 @@ Easily to test your symfony applications on futurs versions of PHP
 
 ## Quick installation
 
-/!\ sfindocker only works on recents symfony application built with Symfony cli. mailer and database on your docker-compose.yml are also required
+🛑 sfindocker only works on recents symfony application built with Symfony cli. mailer and database on your docker-compose.yml are also required
 
  * Step 1, go to your projet and start your database and mailer with docker-compose
  * Step 2, copy paste docker-compose-php81RC6.yaml in your project
@@ -15,7 +15,7 @@ Easily to test your symfony applications on futurs versions of PHP
 
 I wanted to see if i got deprecated codes on my project, but I didn't want install PHP8.1 RC6 on my macbook. Docker is a perfect solution to test it quickly. 
 
-## Feel free to contribute
+## Feel free to contribute 🚀
 
 You can adapt php81RC6 for you needs. 
 
