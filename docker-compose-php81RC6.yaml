@@ -3,6 +3,9 @@ services:
     server:
         build:
             context: 'php81RC6/'
+            cache_from:
+                - yoanntyt/php81rc6
+        image: yoanntyt/php81rc6
         ports:
             - 8000:8000
         volumes:
