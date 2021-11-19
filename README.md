@@ -10,7 +10,7 @@ Easily to test your symfony applications on futurs versions of PHP
 
 ## Quick installation
 
- * Step 1, go to your projet and start your database and mailer with docker-compose
+ * Step 1, go to your projet and start your database and mailcatcher with docker-compose
  * Step 2, copy paste docker-compose-php81RC6.yaml in your project
  * Step 3, replace PROJECT_FOLDER_NAME by the exact name of your current folder
  * Step 4, start this new docker-compose-php81RC6.yaml `docker-compose -f docker-compose-php81RC6.yaml up --force-recreate`
