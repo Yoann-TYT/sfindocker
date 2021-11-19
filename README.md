@@ -1,5 +1,5 @@
 # sfindocker
-Easily to test your symfony applications on futurs versions of PHP
+To easily test your symfony applications on futurs versions of PHP
 
 ## Requirements 
 
