@@ -22,7 +22,7 @@ I wanted to see if i got deprecated codes on my project, but I didn't want insta
 
 ## Feel free to contribute 🚀
 
-You can adapt php81RC6 for you needs. 
+You can adapt php81RC6 to your needs. 
 
 ## Disclaimer 
 
